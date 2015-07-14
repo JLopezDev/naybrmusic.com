@@ -1,0 +1,24 @@
+@import 'font-stacks';
+@import 'functions';
+@charset 'UTF-8';
+
+// Typography
+$base-font-family: $helvetica;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1.6rem;
+
+// Colors
+$theme-color: #d32f2f;
+$theme-accent: #f44336;
+
+$gray-light: #ccc;
+$gray: #666;
+$gray-dark: #333;
+
+$text-color: $gray-dark;
+$link-idle-color: $theme-accent;
+$link-hover-color: darken($theme-accent, 10%);
+
+$site-width: 116.4rem;
