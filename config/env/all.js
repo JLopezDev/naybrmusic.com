@@ -6,7 +6,7 @@ module.exports = {
 		description: 'Up3 MEN Stack project template',
 		keywords: 'mongodb, express, node.js, mongoose, passport'
 	},
-	port: process.env.PORT || 9001,
+	port: process.env.PORT || 9002,
 	templateEngine: 'swig',
 	// The secret should be set to a non-guessable string that
 	// is used to compute a session hash
