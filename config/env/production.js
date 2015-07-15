@@ -17,17 +17,20 @@ module.exports = {
 			stream: 'access.log'
 		}
 	},
-  assets: {
-    lib: {
-      css: [],
-      js: [
+	assets: {
+		lib: {
+			css: [],
+			js: [
+        'public/lib/jquery/dist/jquery.min.js'
       ]
-    },
-    css: [
+		},
+		css: [
+      'public/css/main.min.css'
     ],
-    js: [
+		js: [
+      'public/js/main.min.js'
     ]
-  },
+	},
 	mailer: {
 		from: process.env.MAILER_FROM || 'MAILER_FROM',
 		options: {
