@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   font-family: HelveticaNeue, Arial, sans-serif;
 }
+
 .site-container,
 .site-container:after {
   min-height: 100%;
@@ -12,6 +13,7 @@ body {
   flex: 1;
   flex-direction: column;
 }
+
 .site-container {
   background-image: url("/img/image_bg.jpg");
   background-size: cover;
@@ -21,7 +23,7 @@ body {
 
 .site-container:after {
   content: '';
-  background-color: rgba(12, 66, 84, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -29,64 +31,70 @@ body {
   right: 0;
   z-index: 1;
 }
+
 .logo,
-.social-navi,
-.soundcloud,
 .site-footer {
   position: relative;
   z-index: 10;
   padding: 0 10px;
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/image_circle.png");
-  background-size: 250px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   position: relative;
   z-index: 10;
-  svg {
-    width: 450px;
-  }
-  path {
-    fill: $white;
-  }
-}
-.social-navi {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  a {
-    color: $white;
-    font-size: 60px;
-  }
-}
-.soundcloud {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-  iframe {
+  margin-top: 80px;
+
+  img {
+    max-width: 600px;
     width: 100vw;
-    max-width: 821px;
-    height: 166px;
-    padding: 0 10px;
   }
 }
+
 .site-footer {
   background-color: #333;
   height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  .btn-epk {
-    border-radius: 25px;
-    background-color: #89161c;
-    width: 261px;
-    height: 50px;
-    color: $white;
+
+  .social-navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+
+    li+li {
+      margin-left: 10px;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    a {
+      font-size: 40px;
+      color: #bcbcbc;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .btn-epk {
+      border: 4px solid #bcbcbc;
+      height: 36px;
+      position: relative;
+      top: -7px;
+      color: #bcbcbc;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5px;
+    }
   }
 }
