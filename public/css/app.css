@@ -156,6 +156,7 @@ body {
 .site-container {
   background-image: url("/img/image_bg.jpg");
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   position: relative; }
 
