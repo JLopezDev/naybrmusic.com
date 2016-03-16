@@ -1,4 +1,8 @@
 // reusable containers
+html {
+  font-size: 62.5%;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -37,7 +41,7 @@ body {
 .site-footer {
   position: relative;
   z-index: 10;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 .symbol,
@@ -50,35 +54,35 @@ body {
 }
 
 .symbol {
-  margin-top: 30px;
+  margin-top: 3rem;
   
   img {
-    width: 115px; 
-    height: 115px;
+    width: 11.5rem; 
+    height: 11.5rem;
   }
 }
 
 .logo {
-  margin-top: 80px;
+  margin-top: 4rem;
   
   img {
-    max-width: 680px;
+    max-width: 68rem;
     width: 80vw;
   }
 }
 
 .soundcloud-embed {
   width: 80vw;
-  margin: 80px auto 80px;
+  margin: 4rem auto 4rem;
   position: relative;
   z-index: 10;
-  height: 205px;
+  height: 20.5rem;
   overflow: hidden;
 }
 
 .site-footer {
   background-color: #333;
-  height: 90px;
+  height: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,10 +91,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
+    height: 4.5rem;
 
     li + li {
-      margin-left: 10px;
+      margin-left: 1rem;
     }
 
     li {
@@ -101,7 +105,7 @@ body {
     }
 
     a {
-      font-size: 40px;
+      font-size: 4.0rem;
       color: #bcbcbc;
 
       &:hover {
@@ -110,14 +114,14 @@ body {
     }
 
     .btn-epk {
-      border: 4px solid #bcbcbc;
-      height: 36px;
+      border: .4rem solid #bcbcbc;
+      height: 3.6rem;
       position: relative;
-      top: -7px;
+      top: -.7rem;
       color: #bcbcbc;
-      font-size: 18px;
+      font-size: 1.8rem;
       font-weight: bold;
-      padding: 5px;
+      padding: .5rem;
     }
   }
 }
