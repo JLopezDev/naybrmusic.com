@@ -12,10 +12,14 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function (mix) {
-  mix
-  .browserSync({
-    proxy: 'homestead.app'
-  })
-  .scripts(['main.js'])
-  .sass('app.scss');
+    mix
+        .browserSync({
+            proxy: 'naybrmusic.app'
+        })
+        .scripts([
+            'soundcloud.widget.js'
+            , 'lib/jquery/dist/jquery.min.js'
+            , 'main.js'
+        ])
+        .sass('app.scss');
 });

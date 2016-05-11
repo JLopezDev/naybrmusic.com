@@ -1,4 +1,8 @@
 // reusable containers
+* {
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -55,29 +59,49 @@ body {
 
 .symbol {
   margin-top: 3rem;
-  
+
   img {
-    width: 11.5rem; 
+    width: 11.5rem;
     height: 11.5rem;
   }
 }
 
 .logo {
   margin-top: 4rem;
-  
+
   img {
     max-width: 68rem;
     width: 80vw;
   }
 }
 
-.soundcloud-embed {
+.soundcloud__embed {
   width: 80vw;
   margin: 4rem auto 4rem;
   position: relative;
   z-index: 10;
   height: 20.5rem;
   overflow: hidden;
+}
+
+.soundcloud__controls {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+
+.soundcloud__control {
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #bcbcbc;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 .site-footer {
@@ -117,7 +141,7 @@ body {
       border: .4rem solid #bcbcbc;
       height: 3.6rem;
       position: relative;
-      top: -.7rem;
+      top: -.4rem;
       color: #bcbcbc;
       font-size: 1.8rem;
       font-weight: bold;
@@ -125,3 +149,8 @@ body {
     }
   }
 }
+
+.invisible {
+  opacity: 0;
+}
+
