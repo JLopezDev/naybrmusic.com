@@ -61,8 +61,8 @@ body {
   margin-top: 3rem;
 
   img {
-    width: 11.5rem;
-    height: 11.5rem;
+    width: 100%;
+    max-height: 15vh;
   }
 }
 
@@ -70,8 +70,8 @@ body {
   margin-top: 4rem;
 
   img {
-    max-width: 68rem;
-    width: 80vw;
+    width: 100%;
+    max-height: 20vh;
   }
 }
 
@@ -80,22 +80,12 @@ body {
   margin: 4rem auto 4rem;
   position: relative;
   z-index: 10;
-  height: 20.5rem;
   overflow: hidden;
+  height: 20vh;
 
-  @media (min-width:320px) {
-    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-
-  }
-  @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
-  @media (min-width:600px) {
-    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  @media (min-width: 600px) {
     width: 80vw;
   }
-  @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-  @media (min-width:1281px) { /* hi-res laptops and desktops */ }
-
 }
 
 .soundcloud__controls {
@@ -103,8 +93,10 @@ body {
   justify-content: center;
   position: relative;
   z-index: 20;
-  opacity: 1;
-  transition: all .5s ease-in-out;
+  transition: all .7s ease-in-out;
+  transition-delay: .3s;
+  width: 0;
+  overflow: hidden;
 }
 
 .soundcloud__control {
@@ -143,8 +135,12 @@ body {
     }
 
     a {
-      font-size: 4.0rem;
       color: #bcbcbc;
+      font-size: 4.0rem;
+
+      @media (min-width: 480px) {
+        font-size: 3.0rem;
+      }
 
       &:hover {
         color: $white;

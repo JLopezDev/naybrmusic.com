@@ -16,7 +16,7 @@
 
     </div>
     <footer class="site-footer">
-        <div class="soundcloud__controls invisible">
+        <div class="soundcloud__controls">
             <button class="soundcloud__control" id="prev"><span class="icon-prev"></span></button>
             <button class="soundcloud__control" id="play"><span class="icon-play"></span></button>
             <button class="soundcloud__control" id="next"><span class="icon-next"></span></button>

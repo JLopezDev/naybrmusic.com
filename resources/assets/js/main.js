@@ -11,8 +11,10 @@
         var playClass = 'icon-play';
         var pauseClass = 'icon-pause';
 
-        $controlWrap.removeClass('invisible');
         
+        // $controlWrap.removeClass('invisible');
+        $controlWrap.css('width', '138px');
+
         $playBtn.on('click', function () {
             widget.toggle();
         });
@@ -24,16 +26,17 @@
         $nextBtn.on('click', function () {
             widget.next();
         });
-        
+
         widget.bind(SC.Widget.Events.PLAY, function () {
+            widget.setVolume(60);
             $el.removeClass(playClass);
             $el.addClass(pauseClass);
-            
-            widget.getCurrentSound(function (currentSound) {
-                // var art = 'url(' + currentSound.artwork_url + ')';
-                // $('.site-container').css('background-image', art);
-                // console.log(art);
-            });
+
+            // widget.getCurrentSound(function (currentSound) {
+            // var art = 'url(' + currentSound.artwork_url + ')';
+            // $('.site-container').css('background-image', art);
+            // console.log(art);
+            // });
         });
 
         widget.bind(SC.Widget.Events.PAUSE, function () {
