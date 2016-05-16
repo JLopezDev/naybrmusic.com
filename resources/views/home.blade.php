@@ -41,9 +41,7 @@
         </ul>
     </header>
 
-    <div class="background-image">
-
-    </div>
+    <div class="background-image"> </div>
 
     <div class="site-container">
         <section class="fold">
@@ -65,12 +63,13 @@
                     <a href="https://twitter.com/naybrmusic" class="twitter-follow-button" data-show-count="false"
                        data-size="large" data-dnt="true">Follow @naybrmusic</a>
                     <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:2pjQGnHCgkxnrPEbEQ1VeD&size=basic&theme=dark&show-count=0"
-                            width="92" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden; margin-top: 2px;"
+                            width="92" height="25" scrolling="no" frameborder="0"
+                            style="border:none; overflow:hidden; margin-top: 2px;"
                             allowtransparency="true"></iframe>
                 </div>
             </div>
         </section>
-        <section class="" , style="background-color: #0f0f0f;">
+        <section class="" style="background-color: #0f0f0f;">
             <div class="soundcloud__embed">
                 <iframe width="100%" height="340" scrolling="yes" frameborder="no"
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/115820844&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
