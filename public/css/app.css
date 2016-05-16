@@ -281,7 +281,8 @@ body {
   transition: all .2s ease-in-out; }
 
 .twitter-follow-button {
-  text-indent: -888px; }
+  text-indent: -9999px;
+  margin-right: 2rem; }
 
 .site-header {
   background-color: #0f0f0f;

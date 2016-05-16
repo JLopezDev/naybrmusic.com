@@ -64,6 +64,9 @@
                 <div class="row">
                     <a href="https://twitter.com/naybrmusic" class="twitter-follow-button" data-show-count="false"
                        data-size="large" data-dnt="true">Follow @naybrmusic</a>
+                    <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:2pjQGnHCgkxnrPEbEQ1VeD&size=basic&theme=dark&show-count=0"
+                            width="92" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
+                            allowtransparency="true"></iframe>
                 </div>
             </div>
         </section>
