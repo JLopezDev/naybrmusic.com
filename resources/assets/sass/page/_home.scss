@@ -20,32 +20,25 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
 }
 
 .site-container {
+  //padding-top: 6.6rem;
+}
+
+.background-image {
   background-image: url("/img/image_bg.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  position: relative;
-}
-
-.site-container:after {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   z-index: 1;
-}
-
-.logo,
-.site-footer {
-  position: relative;
-  z-index: 10;
-  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
 }
 
 .symbol,
@@ -53,46 +46,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 10;
-}
-
-.symbol {
-  margin-top: 3rem;
-
-  img {
-    width: 100%;
-    max-height: 15vh;
-  }
-}
-
-.logo {
-  margin-top: 4rem;
-
-  img {
-    width: 100%;
-    max-height: 20vh;
-  }
 }
 
 .soundcloud__embed {
-  width: 100%;
+  width: 34rem;
+  height: 24.5rem;
   margin: 4rem auto 4rem;
-  position: relative;
-  z-index: 10;
   overflow: hidden;
-  height: 20vh;
 
   @media (min-width: 600px) {
-    width: 80vw;
+    //width: 80vw;
   }
 }
 
 .soundcloud__controls {
   display: flex;
   justify-content: center;
-  position: relative;
-  z-index: 20;
   transition: all .7s ease-in-out;
   transition-delay: .3s;
   width: 0;
@@ -110,53 +79,41 @@ body {
   }
 }
 
-.site-footer {
-  background-color: #333;
-  height: 9rem;
+.social-navi {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 4.5rem;
 
-  .social-navi {
+  li + li {
+    margin-left: 2rem;
+  }
+
+  li {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 4.5rem;
+    flex-direction: column;
+    height: 100%;
+  }
 
-    li + li {
-      margin-left: 1rem;
+  a {
+    color: #bcbcbc;
+    font-size: 4.0rem;
+
+    &:hover {
+      color: $white;
     }
+  }
 
-    li {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    a {
-      color: #bcbcbc;
-      font-size: 4.0rem;
-
-      @media (min-width: 480px) {
-        font-size: 3.0rem;
-      }
-
-      &:hover {
-        color: $white;
-      }
-    }
-
-    .btn-epk {
-      border: .4rem solid #bcbcbc;
-      height: 3.6rem;
-      position: relative;
-      top: -.4rem;
-      color: #bcbcbc;
-      font-size: 1.8rem;
-      font-weight: bold;
-      padding: .5rem;
-    }
+  .btn-epk {
+    border: .4rem solid #bcbcbc;
+    height: 3.6rem;
+    position: relative;
+    //top: -.4rem;
+    color: #bcbcbc;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: .5rem;
   }
 }
 
@@ -164,3 +121,105 @@ body {
   opacity: 0;
 }
 
+.fold {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all .2s ease-in-out;
+}
+
+.site-header {
+  background-color: #0f0f0f;
+  height: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.site-footer {
+  background-color: black;
+  color: #282828;;
+  font-size: 1.2rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    text-align: center;
+    margin: .5rem;
+  }
+
+  a {
+    color: #282828;;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .copyright {
+    letter-spacing: .2rem;
+  }
+}
+
+/*
+ logos branding
+*/
+
+.logo {
+  padding: 8rem 0 4rem;
+
+  img {
+    max-width: 26rem;
+  }
+}
+
+.symbol {
+  margin-top: 3rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.album {
+
+}
+
+.album__artwork {
+  width: 34rem;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.album__buttons {
+  display: flex;
+  flex-direction: column;
+  min-width: 40rem;
+  margin: 0 auto;
+}
+
+.album__buttons__button {
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
