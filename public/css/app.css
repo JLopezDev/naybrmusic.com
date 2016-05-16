@@ -174,7 +174,7 @@ body {
   z-index: 10; }
 
 .background-image {
-  background-image: url("/img/image_bg.jpg");
+  background-image: url("/img/image_junglebg.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -269,9 +269,9 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -279,6 +279,9 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   transition: all .2s ease-in-out; }
+
+.twitter-follow-button {
+  text-indent: -888px; }
 
 .site-header {
   background-color: #0f0f0f;
@@ -328,9 +331,9 @@ body {
  logos branding
 */
 .logo {
-  padding: 8rem 0 4rem; }
+  padding: 10.6rem 0 4rem; }
   .logo img {
-    max-width: 26rem; }
+    width: 26rem; }
 
 .symbol {
   margin-top: 3rem; }
