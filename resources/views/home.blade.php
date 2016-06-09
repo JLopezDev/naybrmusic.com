@@ -1,8 +1,6 @@
 @extends('layouts.default')
 
 @section('scripts')
-    <a href="https://twitter.com/naybrmusic" class="twitter-follow-button" data-show-count="false" data-size="large"
-       data-dnt="true">Follow @naybrmusic</a>
     <script>!function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
             if (!d.getElementById(id)) {
@@ -41,7 +39,7 @@
         </ul>
     </header>
 
-    <div class="background-image"> </div>
+    <div class="background-image"></div>
 
     <div class="site-container">
         <section class="fold">
@@ -60,8 +58,8 @@
                     {{--<a href="https://itunes.apple.com/us/album/savage-ep/id1108152582" class="album__buttons__button"> <img src="/img/bttn_applemusic.svg" alt=""> </a>--}}
                 </div>
                 <div class="row">
-                    <a href="https://twitter.com/naybrmusic" class="twitter-follow-button" data-show-count="false"
-                       data-size="large" data-dnt="true">Follow @naybrmusic</a>
+                    <a href="https://twitter.com/naybrmusic" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @naybrmusic</a>
+
                     <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:2pjQGnHCgkxnrPEbEQ1VeD&size=basic&theme=dark&show-count=0"
                             width="92" height="25" scrolling="no" frameborder="0"
                             style="border:none; overflow:hidden; margin-top: 2px;"
@@ -80,6 +78,5 @@
             <p class="copyright">COPYRIGHT &copy; {{date('Y')}} NAYBRMUSIC</p>
             <p>CONTACT: <a href="mailto:naybrmusic@gmail.com">NAYBRMUSIC@GMAIL.COM</a></p>
         </div>
-
     </div>
 @stop
