@@ -1,60 +1,159 @@
 /*************** General Reset ***********************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
   vertical-align: baseline;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
   display: block;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
-ol, ul {
-  list-style: none; }
+ol,
+ul {
+  list-style: none;
+}
 
-blockquote, q {
-  quotes: none; }
+blockquote,
+q {
+  quotes: none;
+}
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-input, textarea {
-  box-sizing: border-box; }
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /*************** Buttons Reset ***********************/
+
 [role="button"],
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
-  box-sizing: content-box; }
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
 
 input[type="submit"],
 input[type="reset"],
@@ -66,12 +165,14 @@ button {
   font: inherit;
   line-height: normal;
   overflow: visible;
-  padding: 0; }
+  padding: 0;
+}
 
 input::-moz-focus-inner,
 button::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 [role="button"] {
   color: inherit;
@@ -79,20 +180,24 @@ button::-moz-focus-inner {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  white-space: pre; }
+  white-space: pre;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 @font-face {
   font-family: "naybrmusic";
   src: url("/fonts/naybrmusic.eot");
   src: url("/fonts/naybrmusic.eot?#iefix") format("embedded-opentype"), url("/fonts/naybrmusic.woff") format("woff"), url("/fonts/naybrmusic.ttf") format("truetype"), url("/fonts/naybrmusic.svg#naybrmusic") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 [data-icon]:before {
   font-family: "naybrmusic" !important;
@@ -104,7 +209,8 @@ body {
   speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
@@ -116,58 +222,79 @@ body {
   speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-instagram:before {
-  content: "\61"; }
+  content: "a";
+}
 
 .icon-soundcloud:before {
-  content: "\63"; }
+  content: "c";
+}
 
 .icon-facebook:before {
-  content: "\62"; }
+  content: "b";
+}
 
 .icon-twitter:before {
-  content: "\65"; }
+  content: "e";
+}
 
 .icon-play:before {
-  content: "\66"; }
+  content: "f";
+}
 
 .icon-pause:before {
-  content: "\68"; }
+  content: "h";
+}
 
 .icon-next:before {
-  content: "\69"; }
+  content: "i";
+}
 
 .icon-prev:before {
-  content: "\6a"; }
+  content: "j";
+}
 
 * {
   outline: none;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-family: HelveticaNeue, Arial, sans-serif; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: HelveticaNeue, Arial, sans-serif;
+}
 
 .site-container,
 .site-container:after {
   min-height: 100%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex: 1;
-  flex: 1;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+}
 
 .background-image {
   background-image: url("/img/image_junglebg.jpg");
@@ -179,165 +306,240 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  height: 100%; }
+  height: 100%;
+}
 
 .symbol,
 .logo {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .soundcloud__embed {
   width: 34rem;
   height: 24.5rem;
   margin: 4rem auto 4rem;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .soundcloud__controls {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
-  transition-delay: .3s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
   width: 0;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .soundcloud__control {
   font-size: 3rem;
   margin: 0 1rem;
   color: #bcbcbc;
-  cursor: pointer; }
-  .soundcloud__control:hover {
-    color: #fff; }
+  cursor: pointer;
+}
+
+.soundcloud__control:hover {
+  color: #fff;
+}
 
 .social-navi {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 4.5rem; }
-  .social-navi li + li {
-    margin-left: 2rem; }
-  .social-navi li {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 100%; }
-  .social-navi a {
-    color: #bcbcbc;
-    font-size: 4.0rem; }
-    .social-navi a:hover {
-      color: #fff; }
-  .social-navi .btn-epk {
-    border: .4rem solid #bcbcbc;
-    height: 3.6rem;
-    position: relative;
-    color: #bcbcbc;
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding: .5rem; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.5rem;
+}
+
+.social-navi li + li {
+  margin-left: 2rem;
+}
+
+.social-navi li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.social-navi a {
+  color: #bcbcbc;
+  font-size: 4.0rem;
+}
+
+.social-navi a:hover {
+  color: #fff;
+}
+
+.social-navi .btn-epk {
+  border: .4rem solid #bcbcbc;
+  height: 3.6rem;
+  position: relative;
+  color: #bcbcbc;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: .5rem;
+}
 
 .invisible {
-  opacity: 0; }
+  opacity: 0;
+}
 
 .fold {
   min-height: 100vh;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  transition: all .2s ease-in-out; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
 
 .twitter-follow-button {
   text-indent: -9999px;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+}
 
 .site-header {
   background-color: #0f0f0f;
   height: 6rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 20; }
+  z-index: 20;
+}
 
 .site-footer {
   background-color: black;
   color: #282828;
   font-size: 1.2rem;
   height: 10rem;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .site-footer p {
-    text-align: center;
-    margin: .5rem; }
-  .site-footer a {
-    color: #282828; }
-    .site-footer a:hover {
-      color: #fff; }
-  .site-footer .copyright {
-    letter-spacing: .2rem; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.site-footer p {
+  text-align: center;
+  margin: .5rem;
+}
+
+.site-footer a {
+  color: #282828;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.site-footer .copyright {
+  letter-spacing: .2rem;
+}
 
 /*
  logos branding
 */
+
 .logo {
-  padding: 10.6rem 0 4rem; }
-  .logo img {
-    width: 26rem; }
+  padding: 10.6rem 0 4rem;
+}
+
+.logo img {
+  width: 26rem;
+}
 
 .symbol {
-  margin-top: 3rem; }
-  .symbol img {
-    width: 100%; }
+  margin-top: 3rem;
+}
+
+.symbol img {
+  width: 100%;
+}
 
 .album__artwork {
-  width: 34rem; }
-  .album__artwork img {
-    display: block;
-    width: 100%; }
+  width: 34rem;
+}
+
+.album__artwork img {
+  display: block;
+  width: 100%;
+}
 
 .row {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-top: 2rem; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
 
 .album__buttons {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 40rem;
-  margin: 0 auto 2rem; }
+  margin: 0 auto 2rem;
+}
 
 .album__buttons__button:not(:first-child) {
-  margin-left: 2rem; }
+  margin-left: 2rem;
+}
 
-/*# sourceMappingURL=app.css.map */
